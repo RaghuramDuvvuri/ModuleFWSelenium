@@ -141,7 +141,7 @@ public class DriverApp {
 	    	TestDescription=description;
 			 // Thread.sleep(5000);
 			driver.manage().window().maximize();
-	    
+	       
 			driver.manage().timeouts().pageLoadTimeout(300,TimeUnit.SECONDS);
 
 			Method method = Module1Methods.class.getMethod(TestCase);
@@ -187,6 +187,8 @@ public class DriverApp {
 			    	data[datarow][1]=Testdesclist.get(datarow);
 			    	data[datarow][2] = TestbrowList.get(datarow);
 			    }
+			    
+			    // To clear all array list after reading data object from arraylist
 			    ReadJson.Cleararraylists();
 
 			}
